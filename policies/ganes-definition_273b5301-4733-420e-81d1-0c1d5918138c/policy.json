@@ -1,0 +1,44 @@
+{
+ "properties": {
+  "displayName": "ganes-definition",
+  "policyType": "Custom",
+  "mode": "All",
+  "metadata": {
+   "createdBy": "9f69bb37-786c-4ce5-908c-b9b4642d14a9",
+   "createdOn": "2020-10-07T12:00:03.9931984Z",
+   "updatedBy": "00caa920-6b8e-4f43-9389-8799af376089",
+   "updatedOn": "2021-01-13T10:55:19.0787411Z",
+   "gitHubPolicy": {
+    "digest": "16e5e68f586f346b7fbce1b597d5b7cf6a158a92",
+    "repoName": "Ganeshrockz/AnotherTest",
+    "commitSha": "8ad04b6a6e55d45e19640c1cd1ee08a17b2a0b60",
+    "runUrl": "https://github.com/Ganeshrockz/AnotherTest/actions/runs/482556410",
+    "filepath": "aa/policies/ganes-definition_273b5301-4733-420e-81d1-0c1d5918138c"
+   }
+  },
+  "parameters": {
+   "allowedLocations": {
+    "type": "Array",
+    "metadata": {
+     "displayName": "Allowed locations",
+     "description": "The list of allowed locations for resources.",
+     "strongType": "location"
+    }
+   }
+  },
+  "policyRule": {
+   "if": {
+    "not": {
+     "field": "location",
+     "in": "[parameters('allowedLocations')]"
+    }
+   },
+   "then": {
+    "effect": "audit"
+   }
+  }
+ },
+ "id": "/subscriptions/c00d16c7-6c1f-4c03-9be1-6934a4c49682/providers/Microsoft.Authorization/policyDefinitions/273b5301-4733-420e-81d1-0c1d5918138c",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "273b5301-4733-420e-81d1-0c1d5918138c"
+}

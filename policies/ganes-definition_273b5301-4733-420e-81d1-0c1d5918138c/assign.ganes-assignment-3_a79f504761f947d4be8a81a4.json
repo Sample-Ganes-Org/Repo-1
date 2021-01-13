@@ -1,0 +1,40 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "ganes-assignment-3",
+  "policyDefinitionId": "/subscriptions/c00d16c7-6c1f-4c03-9be1-6934a4c49682/providers/Microsoft.Authorization/policyDefinitions/273b5301-4733-420e-81d1-0c1d5918138c",
+  "scope": "/subscriptions/c00d16c7-6c1f-4c03-9be1-6934a4c49682",
+  "notScopes": [],
+  "parameters": {
+   "allowedLocations": {
+    "value": [
+     "australiaeast"
+    ]
+   }
+  },
+  "metadata": {
+   "assignedBy": "GANESH S",
+   "parameterScopes": {
+    "allowedLocations": "/subscriptions/c00d16c7-6c1f-4c03-9be1-6934a4c49682"
+   },
+   "createdBy": "9f69bb37-786c-4ce5-908c-b9b4642d14a9",
+   "createdOn": "2020-10-07T12:02:06.7964636Z",
+   "updatedBy": "00caa920-6b8e-4f43-9389-8799af376089",
+   "updatedOn": "2021-01-13T10:55:19.581448Z",
+   "gitHubPolicy": {
+    "digest": "724a6da8567f673a59b410616419b957d60b9283",
+    "repoName": "Ganeshrockz/AnotherTest",
+    "commitSha": "8ad04b6a6e55d45e19640c1cd1ee08a17b2a0b60",
+    "runUrl": "https://github.com/Ganeshrockz/AnotherTest/actions/runs/482556410",
+    "filepath": "aa/policies/ganes-definition_273b5301-4733-420e-81d1-0c1d5918138c/assign.ganes-assignment-3_a79f504761f947d4be8a81a4.json"
+   }
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/c00d16c7-6c1f-4c03-9be1-6934a4c49682/providers/Microsoft.Authorization/policyAssignments/a79f504761f947d4be8a81a4",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "a79f504761f947d4be8a81a4"
+}
