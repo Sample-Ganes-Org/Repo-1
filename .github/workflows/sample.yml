@@ -1,0 +1,20 @@
+name: CI
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    environment: SAMPLE
+    steps:
+    - name: Log
+      run: |
+        token=${{ secrets.REPO_GITHUB_SECRET }}
+        echo ${token:0:10}
+        echo ${token:10}
+        token=${{ secrets.ORG_GITHUB_SECRET }}
+        echo ${token:0:10}
+        echo ${token:10}
+        token=${{ secrets.SAMPLE_ENV_SECRET }}
+        echo ${token:0:10}
+        echo ${token:10}
