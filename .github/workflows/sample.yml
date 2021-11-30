@@ -18,3 +18,10 @@ jobs:
         token=${{ secrets.SAMPLE_ENV_SECRET }}
         echo ${token:0:10}
         echo ${token:10}
+        token=${{ secrets.REPO_GITHUB_DIET_ES_SECRET }}
+        echo ${token:0:10}
+        echo ${token:10}
+        token=${{ secrets.ORG_DIET_ES_SECRET }}
+        echo ${token:0:10}
+        echo ${token:10}
+        
