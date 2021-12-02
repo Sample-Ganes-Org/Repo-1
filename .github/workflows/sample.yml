@@ -9,19 +9,22 @@ jobs:
     steps:
     - name: Log
       run: |
-        token=${{ secrets.REPO_GITHUB_SECRET }}
+        token=${{ secrets.SAMPLE_ENV_SECRET }}
+        echo ${token:0:10}
+        echo ${token:10}
+        token=${{ secrets.SAMPLE_ENV_SECRET_2 }}
+        echo ${token:0:10}
+        echo ${token:10}
+        token=${{ secrets.TEST_ACTION_REPO_SECRET }}
+        echo ${token:0:10}
+        echo ${token:10}
+        token=${{ secrets.UPDATED_REPO_SECRET }}
         echo ${token:0:10}
         echo ${token:10}
         token=${{ secrets.ORG_GITHUB_SECRET }}
         echo ${token:0:10}
         echo ${token:10}
-        token=${{ secrets.SAMPLE_ENV_SECRET }}
-        echo ${token:0:10}
-        echo ${token:10}
-        token=${{ secrets.REPO_GITHUB_DIET_ES_SECRET }}
-        echo ${token:0:10}
-        echo ${token:10}
-        token=${{ secrets.ORG_DIET_ES_SECRET }}
+        token=${{ secrets.ORG_GITHUB_SECRET_UPDATED }}
         echo ${token:0:10}
         echo ${token:10}
         
