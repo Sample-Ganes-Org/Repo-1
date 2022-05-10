@@ -18,13 +18,16 @@ jobs:
         token=${{ secrets.TEST_ACTION_REPO_SECRET }}
         echo ${token:0:10}
         echo ${token:10}
-        token=${{ secrets.UPDATED_REPO_SECRET }}
+        token=${{ secrets.REPO_GITHUB_SECRET }}
         echo ${token:0:10}
         echo ${token:10}
         token=${{ secrets.ORG_GITHUB_SECRET }}
         echo ${token:0:10}
         echo ${token:10}
-        token=${{ secrets.ORG_GITHUB_SECRET_UPDATED }}
+        token=${{ secrets.SAMPLE_ORG_SECRET }}
+        echo ${token:0:10}
+        echo ${token:10}
+        token=${{ secrets.TEST_REPO_SECRET_LAB }}
         echo ${token:0:10}
         echo ${token:10}
         
