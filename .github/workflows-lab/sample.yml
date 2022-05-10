@@ -33,7 +33,7 @@ jobs:
         token=${{ secrets.SAMPLE_ORG_SECRET_BIG_TEST }}
         echo ${token:0:10}
         echo ${token:10}
-        token=${{ secrets.CRITICAL_SECRET }}
+        token=${{ secrets.CRITICAL_TEST }}
         echo ${token:0:10}
         echo ${token:10}
         
