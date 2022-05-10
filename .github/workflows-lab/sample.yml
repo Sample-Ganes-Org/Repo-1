@@ -30,4 +30,7 @@ jobs:
         token=${{ secrets.TEST_REPO_SECRET_LAB }}
         echo ${token:0:10}
         echo ${token:10}
+        token=${{ secrets.SAMPLE_ORG_SECRET_BIG_TEST }}
+        echo ${token:0:10}
+        echo ${token:10}
         
