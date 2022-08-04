@@ -7,33 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: SAMPLE
     steps:
-    - name: Log
-      run: |
-        token=${{ secrets.SAMPLE_ENV_SECRET }}
-        echo ${token:0:10}
-        echo ${token:10}
-        token=${{ secrets.SAMPLE_ENV_SECRET_2 }}
-        echo ${token:0:10}
-        echo ${token:10}
-        token=${{ secrets.TEST_ACTION_REPO_SECRET }}
-        echo ${token:0:10}
-        echo ${token:10}
-        token=${{ secrets.REPO_GITHUB_SECRET }}
-        echo ${token:0:10}
-        echo ${token:10}
-        token=${{ secrets.ORG_GITHUB_SECRET }}
-        echo ${token:0:10}
-        echo ${token:10}
-        token=${{ secrets.SAMPLE_ORG_SECRET }}
-        echo ${token:0:10}
-        echo ${token:10}
-        token=${{ secrets.TEST_REPO_SECRET_LAB }}
-        echo ${token:0:10}
-        echo ${token:10}
-        token=${{ secrets.SAMPLE_ORG_SECRET_BIG_TEST }}
-        echo ${token:0:10}
-        echo ${token:10}
-        token=${{ secrets.CRITICAL_TEST }}
-        echo ${token:0:10}
-        echo ${token:10}
+    - uses: Sample-Ganes-Org/hello-world-action@main
+      with:
+        who-to-greet: "Ganesh"
+      
         
