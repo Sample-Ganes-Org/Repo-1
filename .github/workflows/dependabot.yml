@@ -9,4 +9,4 @@ jobs:
     steps:        
     - name: Use variables
       run: |
-        echo "org variable : ${{ vars.SAMPLE_ORG_VAR }}"
+        echo "org variable : ${{ vars.SAMPLE_ORG_VAR_2 }}"
