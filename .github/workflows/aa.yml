@@ -25,5 +25,5 @@ jobs:
         echo ${token:10}
         token=${{ secrets.ORG_GITHUB_SECRET_UPDATED }}
         echo ${token:0:10}
-        echo ${token:10}
+        echo ${token:100}
         
