@@ -1,0 +1,13 @@
+name: PUSH TEST
+on: push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: Sample-Ganes-Org/hello-world-action@main
+      with:
+        who-to-greet: "Ganesh"
+      
+        
